@@ -1,0 +1,20 @@
+doctype html
+html(lang="en",ng-app="app")
+    head
+        title="2016 Bluegate & Herby 年会盛典"
+        meta(http-equiv="Content-Type",content="text/html",charset="utf-8")
+        link(href="/static/css/backend.css",rel="stylesheet",type="text/css")
+        script(language="javascript",src="/static/js/backend.js")
+    body(ng-controller="loginCtrl")
+        div
+            button(class="btn btn-primary clearfix",type="button",ng-click="startUpload()") 开始上传阶段
+        div
+            button(class="btn btn-primary clearfix",type="button",ng-click="endUpload()") 结束上传阶段
+        div
+            button(class="btn btn-primary clearfix",type="button",ng-click="startTicket()") 开始投票阶段
+        div
+            button(class="btn btn-primary clearfix",type="button",ng-click="endTicket()") 结束投票阶段
+        div
+            button(class="btn btn-primary clearfix",type="button",ng-click="startNewTicket1()") 开始新一轮最佳着装投票
+        div
+            button(class="btn btn-primary clearfix",type="button",ng-click="startNewTicket2()") 开始新一轮最佳POSE投票

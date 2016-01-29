@@ -1,0 +1,6 @@
+venv/
+show/bower_components/
+show/node_modules/
+logs/
+nohup.out
+data/

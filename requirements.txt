@@ -1,0 +1,11 @@
+Django==1.8
+django-mysqlpool==0.1.post9
+django-redis==3.8.3
+django-redis-cache==0.13.1
+django-redis-sessions==0.4.0
+MySQL-python==1.2.5
+redis==2.10.3
+requests==2.6.2
+SQLAlchemy==1.0.2
+uWSGI==2.0.10
+xlwt==1.0.0

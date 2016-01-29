@@ -1,0 +1,31 @@
+doctype html
+html(lang="en",ng-app="app")
+    head
+        title 2016 Bluegate & Herby 年会盛典
+        meta(http-equiv="Content-Type",content="text/html",charset="utf-8")
+        link(href="/static/css/rank.css",rel="stylesheet",type="text/css")
+        script(language="javascript",src="/static/js/rank.js")
+    body(ng-controller="loginCtrl")
+        div.background
+            div.container
+                div.title1(ng-if="type=='1'")=""
+                div.title2(ng-if="type=='2'")=""
+                div.rankArea
+                    div.left-container
+                        div.table-tr=""
+                        div.tr-border(ng-repeat="i in rank1")
+                            div.prize1(ng-if="i.rank==1")=""
+                            div.prize2(ng-if="i.rank==2||i.rank==3")=""
+                            div.prize3(ng-if="i.rank==4||i.rank==5||i.rank==6")=""
+                            div.rank {{ i.rank }}
+                            div.name {{ i.userid }}
+                            div.tickets(ng-if="type=='1'") {{ i.like1 }}
+                            div.tickets(ng-if="type=='2'") {{ i.like2 }}
+                    div.right-container
+                        div.table-tr=""
+                        div.tr-border(ng-repeat="i in rank2")
+                            div.rank {{ i.rank }}
+                            div.name {{ i.userid }}
+                            div.tickets(ng-if="type=='1'") {{ i.like1 }}
+                            div.tickets(ng-if="type=='2'") {{ i.like2 }}
+                    div.total {{ total }}

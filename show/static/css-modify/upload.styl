@@ -1,0 +1,65 @@
+@import "./lib/header.styl"
+body
+    font-size:base-font-size
+
+    .background
+        position:absolute
+        width:100%
+        height:100%
+        image-wauto('background1.jpg')
+        background-size:cover
+
+    .title
+        image-wauto('title2.png')
+        width:100%
+        position:relative
+        height:20%
+        top:0
+        z-index:1
+        background-position:top
+    .uploadPic
+        position:relative
+        .showPic
+            width:0.8rem
+            height:0.8rem
+            position:relative
+            margin:0 auto
+            background-image:url('/static/image/add.png')
+            background-size:100%
+            background-position:center
+            background-color:rgba(255,255,255,0.5)
+            background-repeat:no-repeat
+        #upload-file
+            input
+                visibility:hidden
+                width:0
+                height:0
+    .buttonArea
+        position:relative
+        width:100%
+        margin-top:0.1rem
+        button#submit
+            border:none
+            image-wauto('submit2.png')
+            margin:0 auto
+            display:block
+            width:0.4rem
+            height:0.12rem
+            background-color:transparent
+        .upload-success
+            color:#fff
+            font-size:0.08rem
+            text-align:center
+            display:none
+        .upload-process
+            color:#fff
+            font-size:0.08rem
+            text-align:center
+            display:none
+            background-image:url("/static/image/uploading.gif")
+            background-position:top
+            background-size:auto 100%
+            height:0.09rem
+            width:0.5rem
+            background-repeat:no-repeat
+            margin:0 auto

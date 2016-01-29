@@ -1,0 +1,107 @@
+@import "../../bower_components/normalize.css/normalize.css"
+
+*
+    -webkit-overflow-scroll: touch
+    -webkit-user-select:none
+    -khtml-user-select:none
+    user-select:none
+    -webkit-font-smoothing:antialiased
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+    outline:none
+.ng-cloak
+    display:none
+.clearfix:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
+.clearfix
+    display:inline-table
+    height:1%
+    display:block
+
+body
+    padding:0
+    margin:0
+    position:absolute
+    width:100%
+    height:100%
+    overflow-x:hidden
+    background-color:#eeeeee
+
+image-auto(image)
+    background-image:url('/static/image/'+image)
+    background-size:100% 100%
+    background-repeat:no-repeat
+    background-position:center
+
+image-wauto(image)
+    background-image:url('/static/image/'+image)
+    background-size:100% auto
+    background-repeat:no-repeat
+    background-position:center
+    
+image-hauto(image)
+    background-image:url('/static/image/'+image)
+    background-size:auto 100%
+    background-repeat:no-repeat
+    background-position:center
+
+animate(name,time,delay,count)
+    -webkit-animation-name : name
+    -webkit-backface-visibility : hidden
+    -webkit-animation-duration : time
+    -webkit-animation-iteration-count : count
+    -webkit-animation-fill-mode : both
+    -webkit-animation-delay:delay
+
+.alertMenu
+    width:70%
+    position:fixed
+    top:30%
+    margin-left:15%
+    border:1px solid #dcdcdc
+    border-radius:3px
+    box-shadow:1px 1px 3px #ccc
+    background-color:#fff
+    z-index:100000
+    .inner
+        padding:0.1rem
+        
+    .button-line
+        border-top:1px solid #dcdcdc
+        position:relative
+        text-align:center
+        height:0.15rem
+        .button-left
+            position:absolute
+            width:50%
+            height:0.15rem
+            line-height:0.15rem
+            left:0
+            color:#FF5a89
+            border-right:1px solid #dcdcdc
+
+        .button-right
+            position:absolute
+            width:50%
+            height:0.15rem
+            line-height:0.15rem
+            right:0
+button
+    &:active
+        box-shadow:1px 1px 11px #a33a58 inset 
+
+lest-font-size = 0.037rem
+less-font-size = 0.04rem
+base-font-size = 0.043rem
+bigger-font-size = 0.046rem
+biggest-font-size = 0.05rem
+margin-height = 0.05rem
+brand-black = #333
+brand-pink = #ff5a89
+brand-blue = #5abbff
+margin-height-half = 0.025rem
